@@ -100,60 +100,24 @@ Tap it to securely logout from the application.
 ```
 lib/
 │
+├── main.dart
+├── my_app.dart
+│
 ├── core/
 │   ├── api/
-│   │   ├── api_exception.dart
-│   │   ├── app_req_end_point.dart
-│   │
 │   ├── utils/
-│   │   ├── app_settings.dart
-│   │   ├── validators.dart
-│   │   ├── common_button.dart
-│   │
 │
 ├── data/
-│   │
 │   ├── model/
-│   │   ├── auth/
-│   │   │   ├── user_model.dart
-│   │   │   └── login_response_model.dart
-│   │   │
-│   │   ├── dealer/
-│   │   │   ├── notification_model.dart
-│   │   │   ├── dealer_enum.dart
-│   │   │   └── country_model.dart
-│   │
 │   ├── repository/
-│   │   ├── auth_repository.dart
-│   │   └── dealer_repository.dart
-│
 │
 ├── domain/
-│   │
 │   ├── auth/
-│   │   ├── auth_bloc.dart
-│   │   ├── auth_event.dart
-│   │   └── auth_state.dart
-│   │
 │   ├── dealer/
-│   │   ├── dealer_bloc.dart
-│   │   ├── dealer_event.dart
-│   │   └── dealer_state.dart
-│
 │
 ├── features/
-│   │
 │   ├── auth/
-│   │   ├── screens/
-│   │   │   ├── login_screen.dart
-│   │   │   ├── register_screen.dart
-│   │   │   └── splash_screen.dart
-│   │
 │   ├── dealer/
-│   │   ├── screens/
-│   │   │   ├── dealer_notification_list_screen.dart
-│   │   │   └── widgets/
-│   │   │       └── notification_card.dart
 │
 │
 ├── route/
