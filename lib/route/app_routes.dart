@@ -3,4 +3,5 @@ class AppRoute {
   static const login = '/login';
   static const register = '/register';
   static const dealerNotificationListScreen = '/dealerNotificationListScreen';
+  static const myMapScreen = '/myMapScreen';
 }

@@ -1,3 +1,5 @@
+import 'package:assignment_abybaby/data/repository/location/location_repository.dart';
+import 'package:assignment_abybaby/domain/Location/location_bloc.dart';
 import 'package:assignment_abybaby/domain/dealer/dealer_bloc.dart';
 import 'package:assignment_abybaby/route/app_router_config.dart';
 import 'package:flutter/material.dart';
@@ -28,6 +30,9 @@ class _MyAppState extends State<MyApp> {
         ),
         BlocProvider(
           create: (context) => DealerBloc(dealerRepository: DealerRepository()),
+        ),
+        BlocProvider(
+          create: (context) => LocationBloc(locationRepository: LocationRepository()),
         ),
       ],
       child: MaterialApp.router(

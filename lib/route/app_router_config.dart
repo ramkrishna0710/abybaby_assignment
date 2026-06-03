@@ -1,5 +1,7 @@
 import 'package:assignment_abybaby/features/auth/login/screens/login_screen.dart';
 import 'package:assignment_abybaby/features/auth/register/screen/register_screen.dart';
+import 'package:assignment_abybaby/features/location/location_screen.dart';
+import 'package:assignment_abybaby/features/map/my_map_screen.dart';
 import 'package:assignment_abybaby/features/notification/screen/dealer_notification_list_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
@@ -33,7 +35,7 @@ class AppRouterConfig {
       path: AppRoute.root,
       name: AppRoute.root,
       pageBuilder: (context, state) => buildTransitionPage(
-        child: const SplashScreen(),
+        child: const LocationScreen(),
         state: state,
         type: TransitionType.scale,
       ),
@@ -61,6 +63,15 @@ class AppRouterConfig {
       name: AppRoute.dealerNotificationListScreen,
       pageBuilder: (context, state) => buildTransitionPage(
         child: const DealerNotificationListScreen(),
+        state: state,
+        type: TransitionType.slide,
+      ),
+    ),
+    GoRoute(
+      path: AppRoute.myMapScreen,
+      name: AppRoute.myMapScreen,
+      pageBuilder: (context, state) => buildTransitionPage(
+        child: const MyMapScreen(),
         state: state,
         type: TransitionType.slide,
       ),
